@@ -30,7 +30,7 @@ window.key = null;
 function InitializeKeyboard() {
 	window.key = new keyboard();
 	$(document).keydown(function(e) {
-		if (e.keyCode == 16) { isShift = true; }
+		if (e.keyCode == 16) { isShift = true; } //shift is pushed
 		if (e.keyCode == KEY_LEFT) { key.left = true; }
 		if (e.keyCode == KEY_RIGHT) { key.right = true; }
 		if (e.keyCode == KEY_UP) { key.up = true; }
@@ -41,7 +41,7 @@ function InitializeKeyboard() {
 		if (e.keyCode == D) { key.d = true; }
 	});
 	$(document).keyup(function(e) {
-		if (e.keyCode == 16) { isShift = false; }
+		if (e.keyCode == 16) { isShift = false; } //shift is released
 		if (e.keyCode == KEY_LEFT) { key.left = false; }
 		if (e.keyCode == KEY_RIGHT) { key.right = false; }
 		if (e.keyCode == KEY_UP) { key.up = false; }
