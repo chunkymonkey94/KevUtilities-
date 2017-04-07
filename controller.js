@@ -9,13 +9,13 @@ var keyboard = function() {
 	this.d = false;
 };
 
-//arrow keys control
+//arrow keys codes
 var KEY_LEFT = 37;
 var KEY_RIGHT= 39;
 var KEY_UP = 38;
 var KEY_DOWN = 40;
 
-//keyboard control
+//keyboard codes
 var W = 87;
 var A = 65;
 var S = 83;
