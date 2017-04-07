@@ -9,19 +9,24 @@ var keyboard = function() {
 	this.d = false;
 };
 
+//arrow keys control
 var KEY_LEFT = 37;
 var KEY_RIGHT= 39;
 var KEY_UP = 38;
 var KEY_DOWN = 40;
 
+//keyboard control
 var W = 87;
 var A = 65;
 var S = 83;
 var D = 68;
 
+//shift button
 var isShift = false;
+
 window.key = null;
 
+//button is pushed/released
 function InitializeKeyboard() {
 	window.key = new keyboard();
 	$(document).keydown(function(e) {
